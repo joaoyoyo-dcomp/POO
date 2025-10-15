@@ -1,0 +1,32 @@
+# Uma análise mais detalhada do programa "Olá, Mundo"
+
+O programa "Olá, Mundo" contém um único arquivo, que consiste na definição da classe HelloWorld, um método main e uma instrução dentro do método main.
+
+  public class HelloWorld { 
+
+A palavra-chave class inicia a definição da classe chamada HelloWorld. Toda aplicação Java contém pelo menos uma definição de classe. 
+
+  public static void main(String[] args) {
+
+Este é um método de ponto de entrada (definido por seu nome e assinatura public static void main(String[] args)) a partir do qual a JVM pode executar seu programa. Todo programa Java deve ter um. Ele é:
+
+public: significa que o método pode ser chamado de qualquer lugar. 
+static: significa que ele existe e pode ser executado por si só (no nível da classe, sem criar um objeto). 
+void: significa que não retorna nenhum valor. 
+
+Este método main aceita:
+Um array (tipicamente chamado args) de Strings passadas como argumentos para a função main (por exemplo, a partir de argumentos da linha de comando). 
+
+Dentro do método main, vemos a seguinte instrução:
+
+  System.out.println("Olá, Mundo!"); 
+
+Vamos analisar esta instrução elemento por elemento:
+
+System: Denota que a expressão subsequente chamará a classe System, do pacote java.lang. 
+. (ponto): Este é um "operador de ponto". Operadores de ponto fornecem acesso aos membros de uma classe; ou seja, seus campos (variáveis) e seus métodos. 
+out: Este é o nome do campo estático do tipo PrintStream dentro da classe System que contém a funcionalidade de saída padrão. 
+println: Este é o nome de um método dentro da classe PrintStream. Este método em particular imprime o conteúdo dos parâmetros no console e insere uma nova linha depois. 
+
+
+("Olá, Mundo!");: Esta é a String literal que é passada como um parâmetro para o método println. As aspas duplas em cada extremidade delimitam o texto como uma String. O ponto e vírgula (;) marca o fim da instrução. 
