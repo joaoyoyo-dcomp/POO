@@ -1,0 +1,18 @@
+Primitivos numéricos podem ser convertidos (cast) de duas maneiras. O casting implícito ocorre quando o tipo de origem tem um intervalo menor que o tipo de destino. 
+
+byte byteVar = 42;
+short shortVar = byteVar;
+int intVar = shortVar;
+long longVar = intVar;
+float floatVar = longVar;
+double doubleVar = floatVar;
+
+O tipo boolean não pode ser convertido para ou de qualquer outro tipo primitivo. 
+
+Um char pode ser convertido para/de qualquer tipo numérico usando os mapeamentos de ponto de código especificados pelo Unicode. Um char é representado na memória como um valor inteiro de 16 bits sem sinal. 
+
+char char1 = (char) 65; // 'A' [cite: 1575]
+byte byte1 = (byte) 'A'; // 65 [cite: 1576]
+short short1 = (short) 'A'; // 65 [cite: 1577]
+int int1 = (int) 'A'; // 65 [cite: 1578]  
+  
