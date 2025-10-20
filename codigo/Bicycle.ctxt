@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Bicycle
+comment1.params=newValue
+comment1.target=void\ changeCadence(int)
+comment2.params=newValue
+comment2.target=void\ changeGear(int)
+comment3.params=increment
+comment3.target=void\ speedUp(int)
+comment4.params=decrement
+comment4.target=void\ applyBrakes(int)
+comment5.params=
+comment5.target=void\ printStates()
+numComments=6

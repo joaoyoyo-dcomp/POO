@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=RelogioDigital
+comment0.text=\r\n\ Modela\ um\ Rel\u00F3gio\ Digital\ simples,\ capaz\ de\ marcar\ horas\ e\ minutos.\r\n\ A\ classe\ permite\ que\ o\ tempo\ avance\ (com\ o\ m\u00E9todo\ tick)\ e\ \r\n\ que\ a\ hora\ seja\ exibida.\r\n\r\n\ @author\ Jo\u00E3o\ Guilherme\ de\ Arag\u00E3o\r\n\ @version\ 1.0\ (Atividade\ 3)\r\n
+comment1.params=horaInicial\ minutoInicial
+comment1.target=RelogioDigital(int,\ int)
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ RelogioDigital.\r\n\ Inicializa\ o\ rel\u00F3gio\ com\ o\ hor\u00E1rio\ a\ ser\ definido.\r\n\ @param\ horaInicial\ A\ hora\ em\ que\ o\ rel\u00F3gio\ deve\ come\u00E7ar\ (0-23).\r\n\ @param\ minutoInicial\ O\ minuto\ em\ que\ o\ rel\u00F3gio\ deve\ come\u00E7ar\ (0-59).\r\n
+comment2.params=
+comment2.target=void\ tick()
+comment2.text=\r\n\ Avan\u00E7a\ o\ tempo\ do\ rel\u00F3gio\ em\ um\ minuto.\r\n\ Este\ m\u00E9todo\ \u00E9\ o\ "cora\u00E7\u00E3o"\ do\ rel\u00F3gio\ e\ cuida\ da\ l\u00F3gica\r\n\ de\ virar\ os\ minutos\ para\ horas\ e\ as\ horas\ para\ o\ pr\u00F3ximo\ dia\ (00\:00).\r\n
+comment3.params=
+comment3.target=java.lang.String\ mostraHora()
+comment3.text=\r\n\ Retorna\ a\ hora\ atual\ formatada\ como\ uma\ String.\r\n
+numComments=4
