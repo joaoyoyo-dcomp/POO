@@ -20,9 +20,20 @@ public class RelogioDigital
      */
     public RelogioDigital(int horaInicial, int minutoInicial)
     {
-        // inicializa variáveis de instância com valores fornecidos
-        this.hora = horaInicial;
-        this.minuto = minutoInicial;
+    // Primeiro, checa se os dados são VÁLIDOS
+        if ((0 <= horaInicial && horaInicial <= 23) &&
+            (0 <= minutoInicial && minutoInicial <= 59)){
+            
+            // Caso de SUCESSO: Atribui os valores recebidos
+            this.hora = horaInicial;
+            this.minuto = minutoInicial;
+            
+        } else {
+            
+            // Caso de ERRO: Atribui o padrão seguro (00:00:00)
+            this.hora = 0;
+            this.minuto = 0;
+        }
     }
 
     /**
@@ -45,7 +56,17 @@ public class RelogioDigital
             hora = 0;
         }
     }
+    public void ajustarHora(int novaHora, int novoMinuto) {
+        
+        boolean horaValida = (0 <= novaHora && novaHora <= 23);
+        boolean minutoValido = (0 <= novoMinuto && novoMinuto <= 59);
 
+        if (horaValida && minutoValido) {
+            
+            this.hora = novaHora;
+            this.minuto = novoMinuto;
+            
+        } else {System.out.printf("Dados incorretos");}}
     /**
      * Retorna a hora atual formatada como uma String.
     */

@@ -3,6 +3,8 @@
  * Modela um circuito de interruptores paralelos (three-way).
  * Esta classe representa UMA lâmpada que é controlada
  * por DOIS interruptores.
+ * @author João Guilherme de Aragão
+ * @version (Atividade 2)
  */
 public class interruptoresParalelos
 {
