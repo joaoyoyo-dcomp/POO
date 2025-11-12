@@ -1,0 +1,66 @@
+Variáveis
+
+● Variáveis têm que ser declaradas e elas têm tipo
+
+int idade;
+
+● Atribuição para colocar um valor numa variável
+
+idade = 25;
+idade = idade + 1;
+
+● É possível declarar e inicializar ao mesmo tempo
+
+int idade = 18;
+
+● Java tem quatro formas de variáveis
+– campos (também chamadas de atributos ou variáveis de
+instância)
+– variáveis locais (variáveis temporárias definidas nos
+métodos)
+– parâmetros (variáveis temporárias para passagem de
+argumentos numa chamada a método)
+– variáveis de classe (também chamados campos ou atributos
+estáticos)
+
+Exemplo: 
+public class RelogioDigital {
+private int minutos; -> atributos (variável de instância)
+private int horas; -> atributos
+public static int relogiosCriados = 0; -> variável estática (uma única variável que pode ser acessada por todas as instâncias da classe)
+
+...
+
+public String apresentarHora {
+String hsMins = horas + ":" + minutos; -> variável local
+return hsMins;
+}
+public void ajustar(int hs, int mins) { -> parâmetros
+if ( 0 <= hs && hs <=23 &&
+0 <= mins && mins <=59 ) {
+minutos = mins;
+horas = hs;
+} else {
+throw new RuntimeException ();
+}
+
+
+Variáveis de instância não inicializadas possuem um valor default (0 para tipos numéricos, '\0' para char, false para boolean e null para objetos)
+Variáveis de classe também têm valor default
+Variáveis locais devem ser inicializadas antes de serem usadas
+
+● Tipos, variáveis e referências
+tipos Primitivos: contém números
+tipos Objetos: contém referencias de objetos (Object p = new Object();)
+
+Declarações var
+
+● Declarações de variáveis podem omitir o tipo. Por exemplo, ao invés de
+String message = "Hello world!";
+É possível declarar message assim
+var message = "Hello world!";
+● Neste caso, o tipo da variável message é inferido pelo compilador
+● Restrições
+– Só para declarar variáveis locais
+– O programa deve ter informações contextuais suficientes para o compilador inferir o
+tipo
