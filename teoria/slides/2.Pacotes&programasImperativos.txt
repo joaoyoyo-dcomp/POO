@@ -1,0 +1,27 @@
+Pacotes
+
+Mecanismo para organizar classes relacionadas em um espaço de nomes
+– Exemplo: java.util.ArrayList é a classe ArrayList do pacote java.util
+– No sistema de arquivos, os pacotes se correspondem a pastas.
+● Para que?
+– Organização e modularidade
+– Resolução de conflitos de nomes
+● Exemplo: duas classes Docente em pacotes diferentes: br.ufs.sigaa.Docente e br.ufs.sigrh.Docente
+– Controle de acesso
+● Acesso default (sem modificador de visibilidade): visibilidade dentro do pacote
+
+package com.example.myproject; ->>> Se o arquivo não inclui a declaração package, assume-se um pacote default Útil só para programas pequenos
+import java.util.Scanner; ->>> Importa a classe Scanner do pacote java.util
+
+Main não estático e sem classe
+O arquivo contendo esta definição deve ter nome HelloWorld.java
+Algumas explicações:
+● IO é uma classe predefinida do pacote java.io
+● Todas as classes do pacote java.io são importadas por default
+● println() e readln() são métodos estáticos da classe IO
+
+void main( ) {
+IO.println("Hello world!");
+var name = IO.readln("What is your name? ");
+IO.println("Hello " + name);
+}
